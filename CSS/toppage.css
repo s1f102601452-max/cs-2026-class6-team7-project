@@ -1,10 +1,4 @@
 
-
-
-.red{
-    color:red;
-}
-
 h1{
     text-align: center;
     color: #fff;
@@ -18,18 +12,19 @@ h1{
 }
 
 p {
-  margin: 0 0 15px 0;
-  padding-left: 20px;
-  color: #b0b9c6;
+    margin: 0 0 15px 0;
+    padding-left: 20px;
+    color: #b0b9c6;
 }
 
 h2{
     font-size: 20px;
     color: #00e5ff;
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 body{
     margin: 0;
@@ -38,27 +33,89 @@ body{
     color: #e0e6ed;
     line-height: 1.8;
     font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
-    max-width: 800px;
+    max-width: 900px;
     text-align: center; 
 }
 
 a {
-  display: inline-block;
-  margin-left: 20px;
-  margin-bottom: 40px;
-  padding: 8px 20px;
-  color: #00e5ff;
-  text-decoration: none;
-  border: 1px solid #00e5ff;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    padding: 6px 16px;
+    color: #00e5ff;
+    text-decoration: none;
+    border: 1px solid #00e5ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
 a:hover {
-  background-color: #00e5ff;
-  color: #12141c; /* 文字色を反転 */
-  box-shadow: 0 0 12px rgba(0, 229, 255, 0.5);
-  transform: translateX(5px); /* 少し右にスライド */
+    background-color: #00e5ff;
+    color: #12141c;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+}
+
+a:hover {
+    background-color: #00e5ff;
+    color: #12141c;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.5);
+    transform: translateX(5px); 
+}
+
+
+.game-box {
+    display: flex;             
+    flex-direction: column;
+    align-items: center;      
+    background-color: #1a1d29;
+    border: 1px solid #2a3045;
+    border-radius: 8px;
+    padding: 30px 20px;
+    margin-bottom: 30px;      
+    transition: all 0.3s ease;
+}
+
+.game-box:hover {
+    border-color: #00e5ff;
+    box-shadow: 0 5px 15px rgba(0, 229, 255, 0.1);
+}
+
+/* 左側のテキストエリアの幅をコントロール */
+.game-text {
+    text-align: center;
+    flex: 1;                   
+    padding-right: 20px;       
+}
+
+/* 右側の画像（サムネイル）の設定 */
+.game-thumb {
+    width: 100%; 
+    max-width: 280px;              
+    height: 135px;             
+    object-fit: cover;         
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+@media (min-width: 768px) {
+  .game-box {
+    flex-direction: row;   
+    justify-content: space-between;
+    text-align: left;       
+    align-items: center;
+    padding: 20px;
+    }
+    .game-text {
+    flex: 1;
+    padding-right: 20px;
+    margin-bottom: 0;      
+  }
+  .game-thumb {
+    max-width: 240px;      
+  }
+  h2 {
+    justify-content: flex-start;
+  }
 }
