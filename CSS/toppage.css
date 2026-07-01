@@ -41,3 +41,24 @@ body{
     max-width: 800px;
     text-align: center; 
 }
+
+a {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  padding: 8px 20px;
+  color: #00e5ff;
+  text-decoration: none;
+  border: 1px solid #00e5ff;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #00e5ff;
+  color: #12141c; /* 文字色を反転 */
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.5);
+  transform: translateX(5px); /* 少し右にスライド */
+}
