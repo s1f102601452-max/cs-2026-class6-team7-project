@@ -17,3 +17,15 @@ h2{
     font-size: 20px;
     
 }
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #12141c;
+  color: #e0e6ed;
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+  line-height: 1.8;
+  max-width: 850px; /* 画像が綺麗に見える少し広めの幅 */
+  margin: 0 auto;
+}
+
