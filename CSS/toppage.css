@@ -119,3 +119,15 @@ a:hover {
   h2 {
     justify-content: flex-start;
   }}
+
+.game-box a:has(.game-thumb):hover {
+  opacity: 0.85; 
+}
+
+.game-thumb {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-box a:has(.game-thumb):hover .game-thumb {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
