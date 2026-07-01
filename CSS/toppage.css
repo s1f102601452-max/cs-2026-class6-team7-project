@@ -1,8 +1,5 @@
 
-p{
-    color: #000000;
 
-}
 
 .red{
     color:red;
@@ -18,12 +15,13 @@ h2{
     font-size: 20px;
 }
 body{
-    background:
-        url(''),
-        url(''),
-        url(''),
-        url(''),
-        url('');
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #12141c;
+    color: #e0e6ed;
+    line-height: 1.8;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+    max-width: 800px;
     text-align: center;
     
     
