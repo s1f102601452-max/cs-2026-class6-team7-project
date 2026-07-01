@@ -36,3 +36,12 @@ body {
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* 画像を引き締める暗い影 */
+  margin-bottom: 40px;
+  display: block;
+}
